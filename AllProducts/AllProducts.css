@@ -1,0 +1,128 @@
+.all-products {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.all-products h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.all-products-sort {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.all-products-sort span {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #808f8a;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.all-products-sort span:hover {
+  background-color: #5a6562;
+}
+
+.all-products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.all-products-grid .item {
+  flex: 1 1 200px; /* Adjust this value based on your design */
+  max-width: 300px;
+}
+
+.all-products-loadmore {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  background-color: #808f8a;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  border: none; /* Make sure there are no default button borders */
+}
+
+.all-products-loadmore:hover {
+  background-color: #5a6562;
+}
+
+/* Media queries for responsive design */
+
+/* Screens smaller than 1280px */
+@media (max-width: 1280px) {
+  .shopcategory-products .item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row */
+    max-width: calc(33.333% - 20px);
+  }
+}
+
+/* Screens smaller than 1024px */
+@media (max-width: 1024px) {
+  .shopcategory-products .item {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row */
+    max-width: calc(50% - 20px);
+  }
+}
+
+/* Screens smaller than 800px */
+@media (max-width: 800px) {
+  .shopcategory-container {
+    flex-direction: column;
+  }
+  .shopcategory-content {
+    padding-left: 120px;
+  }
+  .shopcategory-products .item {
+    flex: 1 1 calc(50% - 10px); /* 2 items per row */
+    max-width: calc(50% - 10px);
+  }
+}
+
+/* Screens smaller than 500px */
+@media (max-width: 500px) {
+  .all-products-sort {
+    flex-direction: column; /* Stack sorting options vertically */
+  }
+
+  .all-products-sort span {
+    width: 100%;
+    text-align: center;
+  }
+
+  .shopcategory-content {
+    padding-left: 110px;
+  }
+  .shopcategory-products .item {
+    flex: 1 1 calc(100% - 10px); /* 1 item per row */
+    max-width: calc(100% - 10px);
+  }
+  .all-products-loadmore {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Screens smaller than 390px */
+@media (max-width: 390px) {
+  .all-products-sort span {
+    font-size: 0.8rem;
+  }
+  .shopcategory-content {
+    padding: 5px;
+  }
+  .all-products-loadmore {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+}
