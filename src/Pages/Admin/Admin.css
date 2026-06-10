@@ -1,0 +1,17 @@
+.admin {
+  display: flex;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 800px) {
+  .admin{
+    flex-direction:column;
+  }
+}
