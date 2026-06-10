@@ -1,0 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Teachers:regular,500,600,700,800,italic,500italic,600italic,700italic,800italic);
+
+body{
+  margin: 0;
+  font-family: "Teachers";
+  background-color: rgb(208, 216, 212);
+  height: 100vh;
+}
